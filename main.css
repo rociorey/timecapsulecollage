@@ -6,6 +6,11 @@
     width:1000px;
 }
 
+.photos {
+max-width:vw;
+max-height:vh;
+}
+
 .photos img{
 max-width:300px;
 max-height:400px;
