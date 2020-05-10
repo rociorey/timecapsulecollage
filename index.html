@@ -20,9 +20,14 @@
 <div class="photos">
    
 	<div id="connie1">
-     <img src="connieimage.jpeg"></img>
+     <img src="connieimage.png"></img>
     </div>
-	  
+	  <div id="connie2">
+     <img src="connie2.png"></img>
+    </div>
+	
+	
+	
 
     <div id="rocio1">
      <img src="rocioimage.mp4"></img>
@@ -32,9 +37,29 @@
     </div>
 
 
+
+
     <div id="kim1">
      <img src="kimimage.png"></img>
     </div>
+
+       <div id="kim2">
+     <img src="kim2.png"></img>
+    </div>
+  
+       <div id="kim3">
+     <img src="kim3.png"></img>
+    </div>
+      
+       <div id="kim4">
+     <img src="kim4.png"></img>
+    </div>
+
+       <div id="kim5">
+     <img src="kim5.png"></img>
+    </div>
+
+
 
     <div id="dogma">
      <img src="dogma.jpeg"></img>
@@ -50,21 +75,43 @@
 
 //make images draggable
 var connie1 = document.getElementById("connie1");
+	var connie2 = document.getElementById("connie2");
+	
+	
+	
 	
 var rocio1 = document.getElementById("rocio1");
 	var rocio2 = document.getElementById("rocio2");
 	
+	
+	
+	
 var kim1 = document.getElementById("kim1");
+	var kim2 = document.getElementById("kim2");
+	var kim3 = document.getElementById("kim3");
+	var kim4 = document.getElementById("kim4");
+	var kim5 = document.getElementById("kim5");
+	
+	
 var dogma = document.getElementById("dogma");
+	
+	
 
 var moving = false;
 
 connie1.addEventListener("mousedown", initialClick, false);
+	connie2.addEventListener("mousedown", initialClick, false);
+	
 	
 rocio1.addEventListener("mousedown", initialClick, false);
 	rocio2.addEventListener("mousedown", initialClick, false);
 	
 kim1.addEventListener("mousedown", initialClick, false);
+	kim2.addEventListener("mousedown", initialClick, false);
+	kim3.addEventListener("mousedown", initialClick, false);
+	kim4.addEventListener("mousedown", initialClick, false);
+	kim5.addEventListener("mousedown", initialClick, false);
+	
 	
 dogma.addEventListener("mousedown", initialClick, false);
 
@@ -103,14 +150,41 @@ function getRandomPosition(element) {
 	var randomY = Math.floor(Math.random()*y);
 	return [randomX,randomY];
 }
+	
 window.onload = function() {
-	var xy = getRandomPosition(kim1);
+	
+	
+var xy = getRandomPosition(kim1);
 	kim1.style.top = xy[0] + 'px';
 	kim1.style.left = xy[1] + 'px';
+	   
+	var xy = getRandomPosition(kim2);
+	kim2.style.top = xy[0] + 'px';
+	kim2.style.left = xy[1] + 'px';
+	
+	var xy = getRandomPosition(kim3);
+	kim3.style.top = xy[0] + 'px';
+	kim3.style.left = xy[1] + 'px';
+	
+	var xy = getRandomPosition(kim4);
+	kim4.style.top = xy[0] + 'px';
+	kim4.style.left = xy[1] + 'px';
+	
+	var xy = getRandomPosition(kim5);
+	kim5.style.top = xy[0] + 'px';
+	kim5.style.left = xy[1] + 'px';
+	
+	
 
   var xy = getRandomPosition(connie1);
 	connie1.style.top = xy[0] + 'px';
 	connie1.style.left = xy[1] + 'px';
+	
+	 var xy = getRandomPosition(connie2);
+	connie2.style.top = xy[0] + 'px';
+	connie2.style.left = xy[1] + 'px';
+	
+	
 
   var xy = getRandomPosition(rocio1);
 	rocio1.style.top = xy[0] + 'px';
@@ -119,6 +193,7 @@ window.onload = function() {
 	 var xy = getRandomPosition(rocio2);
 	rocio2.style.top = xy[0] + 'px';
 	rocio2.style.left = xy[1] + 'px';
+	
 
   var xy = getRandomPosition(dogma);
   dogma.style.top = xy[0] + 'px';
