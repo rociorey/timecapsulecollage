@@ -121,6 +121,7 @@ kim1.addEventListener("mousedown", initialClick, false);
 	
 	
 dogma.addEventListener("mousedown", initialClick, false);
+white.addEventListener("mousedown", initialClick, false);
 
 
 function move(e){
@@ -205,7 +206,13 @@ var xy = getRandomPosition(kim1);
   var xy = getRandomPosition(dogma);
   dogma.style.top = xy[0] + 'px';
   dogma.style.left = xy[1] + 'px';
+	
+	var xy = getRandomPosition(white);
+	white.style.top = xy[0] + 'px';
+	white.style.left = xy[1] + 'px';
 }
+	
+	
 
 </script>
 
