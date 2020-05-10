@@ -21,10 +21,15 @@
     <div id="connie1">
      <img src="connieimage.jpeg"></img>
     </div>
-
+	  
+<!--  -->Rocio
     <div id="rocio1">
      <img src="rocioimage.mp4"></img>
     </div>
+	 <div id="rocio2">
+     <img src="glove1.mp4"></img>
+    </div>
+
 
     <div id="kim1">
      <img src="kimimage.png"></img>
@@ -89,15 +94,22 @@
 
 //make images draggable
 var connie1 = document.getElementById("connie1");
+	
 var rocio1 = document.getElementById("rocio1");
+	var rocio2 = document.getElementById("rocio2");
+	
 var kim1 = document.getElementById("kim1");
 var dogma = document.getElementById("dogma");
 
 var moving = false;
 
 connie1.addEventListener("mousedown", initialClick, false);
+	
 rocio1.addEventListener("mousedown", initialClick, false);
+	rocio2.addEventListener("mousedown", initialClick, false);
+	
 kim1.addEventListener("mousedown", initialClick, false);
+	
 dogma.addEventListener("mousedown", initialClick, false);
 
 
@@ -147,6 +159,10 @@ window.onload = function() {
   var xy = getRandomPosition(rocio1);
 	rocio1.style.top = xy[0] + 'px';
 	rocio1.style.left = xy[1] + 'px';
+	
+	 var xy = getRandomPosition(rocio2);
+	rocio2.style.top = xy[0] + 'px';
+	rocio2.style.left = xy[1] + 'px';
 
   var xy = getRandomPosition(dogma);
   dogma.style.top = xy[0] + 'px';
