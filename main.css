@@ -9,6 +9,7 @@
 .photos {
 max-width:vw;
 max-height:vh;
+top: 10px;
 }
 
 .photos img{
@@ -21,30 +22,35 @@ max-height:400px;
   width: 20px;
   height: 20px;
   position: absolute;
+  
 }
 
 #rocio1, #rocio2{
   width: 20px;
   height: 20px;
   position: absolute;
+
 }
 
 #kim1, #kim2, #kim3, #kim4, #kim5 #dogma{
   width: 20px;
   height: 20px;
   position: absolute;
+
 }
 
 #kim1, #kim2, #kim3, #kim4, #kim5{
   width: 20px;
   height: 20px;
   position: absolute;
+
 }
 
 #dogma, #white{
   width: 20px;
   height: 20px;
   position: absolute;
+
 }
 
 /*
