@@ -2,8 +2,8 @@
 
 .body {
     background-color: white;
-    height:1000px;
-    width:1000px;
+    height:800px;
+    width:800px;
 }
 
 .photos {
@@ -20,7 +20,7 @@ max-height:400px;
 #white{
    x:0;
    y:0;
-   height:800px; 
+   height:600px; 
 }
 
  #connie1,#connie2{
