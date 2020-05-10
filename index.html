@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Time Capsule</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+   <!-- <script type="text/javascript" src="script.js"></script> -->
+
+  </head>
+
+
+  <body>
+
+    <!-- <div id="x">
+</div>
+<img src="#" class="icon" hidden="hidden" id="template" /> -->
+
+<!-- this is the html for dragging image -->
+
+<div class="photos">
+    <div id="connie1">
+     <img src="img/connieimage.jpeg"></img>
+    </div>
+
+    <div id="rocio1">
+     <img src="img/rocioimage.mp4"></img>
+    </div>
+
+    <div id="kim1">
+     <img src="img/kimimage.png"></img>
+    </div>
+
+    <div id="dogma">
+     <img src="img/dogma.jpeg"></img>
+    </div>
+
+
+
+</div>
+
+<script>
+
+
+
+//make rnadom shuffle
+// ;(function(window,document,undefined){
+//     "use strict";
+//         var init = function(){
+//             var canvas = document.querySelector('#x');
+//             var icon_template = document.querySelector('#template');
+//             var icon_width = 40;
+//             var icon_height = 30;
+//             var the_images = [
+//                 'img/rocioimage.mp4',
+//                 'img/connieimage.jpeg'
+//             ];
+//
+//             var pickRandomImage = function(){
+//                 var i = Math.floor( Math.random() * the_images.length );
+//                 return the_images[i];
+//             };
+//             var total_number_of_images = 10;
+//             var max_height = window.screen.height;
+//             var max_width = window.screen.width;
+//             var randomCoordinate = function(){
+//                 var r = [];
+//                 var x = Math.floor( Math.random() * max_width );
+//                 var y = Math.floor( Math.random() * max_height );
+//                 r = [x,y];
+//                 return r;
+//             };
+//             var createImage = function(){
+//                 var node = icon_template.cloneNode(true);
+//                 var xy = randomCoordinate();
+//                 node.removeAttribute('id');
+//                 node.removeAttribute('hidden');
+//                 node.style.top = xy[1] + 'px';
+//                 node.style.left = xy[0] + 'px';
+//                 node.setAttribute('src',pickRandomImage());
+//                 canvas.appendChild(node);
+//             };
+//             for (var i=0;i<total_number_of_images;i++){
+//                 createImage();
+//             };
+//         };
+//        window.addEventListener('load',init);
+// })(window,document);
+
+
+//make images draggable
+var connie1 = document.getElementById("connie1");
+var rocio1 = document.getElementById("rocio1");
+var kim1 = document.getElementById("kim1");
+var dogma = document.getElementById("dogma");
+
+var moving = false;
+
+connie1.addEventListener("mousedown", initialClick, false);
+rocio1.addEventListener("mousedown", initialClick, false);
+kim1.addEventListener("mousedown", initialClick, false);
+dogma.addEventListener("mousedown", initialClick, false);
+
+
+function move(e){
+
+  var newX = e.clientX - 10;
+  var newY = e.clientY - 10;
+
+  image.style.left = newX + "px";
+  image.style.top = newY + "px";
+
+
+}
+
+function initialClick(e) {
+
+  if(moving){
+    document.removeEventListener("mousemove", move);
+    moving = !moving;
+    return;
+  }
+
+  moving = !moving;
+  image = this;
+
+  document.addEventListener("mousemove", move, false);
+
+}
+
+
+function getRandomPosition(element) {
+	var x = document.body.offsetHeight-element.clientHeight;
+	var y = document.body.offsetWidth-element.clientWidth;
+	var randomX = Math.floor(Math.random()*x);
+	var randomY = Math.floor(Math.random()*y);
+	return [randomX,randomY];
+}
+window.onload = function() {
+	var xy = getRandomPosition(kim1);
+	kim1.style.top = xy[0] + 'px';
+	kim1.style.left = xy[1] + 'px';
+
+  var xy = getRandomPosition(connie1);
+	connie1.style.top = xy[0] + 'px';
+	connie1.style.left = xy[1] + 'px';
+
+  var xy = getRandomPosition(rocio1);
+	rocio1.style.top = xy[0] + 'px';
+	rocio1.style.left = xy[1] + 'px';
+
+  var xy = getRandomPosition(dogma);
+  dogma.style.top = xy[0] + 'px';
+  dogma.style.left = xy[1] + 'px';
+}
+
+</script>
+
+     <!-- <div style="height:500px;width:500;background-color:blue;">
+  <img src="img/connieimage.jpeg" id="image" />
+</div> -->
+    <!-- <div style="height:500px;width:500;background-color:blue;">
+        <img src="img/connieimage.jpeg" id="cursorImage" ondragstart="return false;"/>
+    </div> -->
+    <!-- <div class="image">
+        <img src="http://placehold.it/100x100" id="cursorImage" ondragstart="return false;"/>
+    </div> -->
+
+
+  </body>
+</html>

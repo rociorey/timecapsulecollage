@@ -1,0 +1,51 @@
+
+
+.body {
+    background-color: white;
+    height:1000px;
+    width:1000px;
+}
+
+.photos img{
+max-width:300px;
+max-height:400px;
+}
+
+
+ #connie1, #rocio1,#kim1, #dogma{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  /* top: 10px;
+  left: 10px; */
+}
+/*
+#connie1 {
+  top: 50px;
+  left: 50px;
+} */
+
+
+
+/* #x {
+  max-width: 5000px;
+  max_height: 5000px;
+    position: relative;
+}
+
+/* #x .icon { */
+/* .icon {
+  max-width: 17em;
+  max-height: 17em;
+    position: absolute;
+    z-index: 2;
+} */
+
+
+
+/*
+.image{
+height:100vh;
+width:100vw;
+background-color:blue;
+} */
