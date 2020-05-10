@@ -17,6 +17,10 @@ max-width:300px;
 max-height:400px;
 }
 
+#white{
+   x:0;
+    y:0;
+}
 
  #connie1,#connie2{
   width: 20px;
@@ -32,19 +36,13 @@ max-height:400px;
 
 }
 
-#kim1, #kim2, #kim3, #kim4, #kim5 #dogma{
-  width: 20px;
-  height: 20px;
-  position: absolute;
-
-}
-
 #kim1, #kim2, #kim3, #kim4, #kim5{
   width: 20px;
   height: 20px;
   position: absolute;
 
 }
+
 
 #dogma{
   width: 20px;
