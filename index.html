@@ -32,7 +32,7 @@
     </div>
 	
 	
-	
+<!-- Rocio -->	
 
     <div id="rocio1">
      <img src="rocioimage.mp4"></img>
@@ -41,6 +41,18 @@
      <img src="Glove1.mp4"></img>
     </div>
 
+<!-- Rocio objects -->
+     <div id="robject1">
+      <img src="audiorecording.jpg"></img>
+     </div>
+     
+     <div id="robject2">
+      <img src="riadevigo.jpg"></img>
+     </div>
+   
+     <div id="robject3">
+      <img src="computercoding.png"></img>
+     </div>
 
 
 
@@ -85,10 +97,15 @@ var connie1 = document.getElementById("connie1");
 	var connie2 = document.getElementById("connie2");
 	
 	
-	
+// 	Rocio 	
 	
 var rocio1 = document.getElementById("rocio1");
 	var rocio2 = document.getElementById("rocio2");
+	
+// 	Rocio objects	
+	var robject1 = document.getElementById("robject1");
+	var robject2 = document.getElementById("robject2");
+	var robject3 = document.getElementById("robject3");
 	
 	
 	
@@ -109,9 +126,14 @@ var moving = false;
 connie1.addEventListener("mousedown", initialClick, false);
 	connie2.addEventListener("mousedown", initialClick, false);
 	
-	
+	// 	Rocio 
 rocio1.addEventListener("mousedown", initialClick, false);
 	rocio2.addEventListener("mousedown", initialClick, false);
+	
+	// 	Rocio objects
+	robject1.addEventListener("mousedown", initialClick, false);
+	robject2.addEventListener("mousedown", initialClick, false);
+	robject3.addEventListener("mousedown", initialClick, false);
 	
 kim1.addEventListener("mousedown", initialClick, false);
 	kim2.addEventListener("mousedown", initialClick, false);
@@ -192,7 +214,7 @@ var xy = getRandomPosition(kim1);
 	connie2.style.top = xy[0] + 'px';
 	connie2.style.left = xy[1] + 'px';
 	
-	
+// 	Rocio 
 
   var xy = getRandomPosition(rocio1);
 	rocio1.style.top = xy[0] + 'px';
@@ -201,6 +223,19 @@ var xy = getRandomPosition(kim1);
 	 var xy = getRandomPosition(rocio2);
 	rocio2.style.top = xy[0] + 'px';
 	rocio2.style.left = xy[1] + 'px';
+	
+// 	Rocio objects
+	 var xy = getRandomPosition(robject1);
+	robject1.style.top = xy[0] + 'px';
+	robject1.style.left = xy[1] + 'px';
+	
+	 var xy = getRandomPosition(robject2);
+	robject2.style.top = xy[0] + 'px';
+	robject2.style.left = xy[1] + 'px';
+	
+	 var xy = getRandomPosition(robject3);
+	robject3.style.top = xy[0] + 'px';
+	robject3.style.left = xy[1] + 'px';
 	
 
   var xy = getRandomPosition(dogma);
