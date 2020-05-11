@@ -23,6 +23,13 @@ max-height:400px;
    height:400px; 
 }
 
+#aobject1, #aobject2, #aobject3, #aobject4, #aobject5{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+
+}
+
  #connie1,#connie2{
   width: 20px;
   height: 20px;
