@@ -24,6 +24,29 @@
 	  
 <div class="photos">
    	
+<!-- Amina objects	 -->
+	<div id="aobject1">
+     <img src="object1.jpg"></img>
+    </div>
+	<div id="aobject2">
+     <img src="object2.jpg"></img>
+    </div>
+
+<div id="aobject3">
+     <img src="object3.jpg"></img>
+    </div>
+
+<div id="aobject4">
+     <img src="object4.jpg"></img>
+    </div>
+
+<div id="aobject5">
+     <img src="object5.jpg"></img>
+    </div>
+
+
+<!-- Coonie -->
+
 	<div id="connie1">
      <img src="connieimage.png"></img>
     </div>
@@ -93,6 +116,15 @@
 //make images draggable
 var white = document.getElementById("white");	
 	
+//      Amina objects
+	var aobject1 = document.getElementById("aobject1");
+	var aobject2 = document.getElementById("aobject2");
+	var aobject3 = document.getElementById("aobject3");
+	var aobject4 = document.getElementById("aobject4");
+	var aobject5 = document.getElementById("aobject5");
+	
+//      Connie
+	
 var connie1 = document.getElementById("connie1");
 	var connie2 = document.getElementById("connie2");
 	
@@ -122,15 +154,22 @@ var dogma = document.getElementById("dogma");
 	
 
 var moving = false;
+	
+//      Amina objects
+	aobject1.addEventListener("mousedown", initialClick, false);
+	aobject2.addEventListener("mousedown", initialClick, false);
+	aobject3.addEventListener("mousedown", initialClick, false);
+	aobject4.addEventListener("mousedown", initialClick, false);
+	aobject5.addEventListener("mousedown", initialClick, false);
 
 connie1.addEventListener("mousedown", initialClick, false);
 	connie2.addEventListener("mousedown", initialClick, false);
 	
-	// 	Rocio 
+// 	Rocio 
 rocio1.addEventListener("mousedown", initialClick, false);
 	rocio2.addEventListener("mousedown", initialClick, false);
 	
-	// 	Rocio objects
+// 	Rocio objects
 	robject1.addEventListener("mousedown", initialClick, false);
 	robject2.addEventListener("mousedown", initialClick, false);
 	robject3.addEventListener("mousedown", initialClick, false);
@@ -183,6 +222,29 @@ function getRandomPosition(element) {
 	
 window.onload = function() {
 	
+// 	Amina objects
+	var xy = getRandomPosition(aobject1);
+	aobject1.style.top = xy[0] + 'px';
+	aobject1.style.left = xy[1] + 'px';
+	
+	 var xy = getRandomPosition(aobject2);
+	aobject2.style.top = xy[0] + 'px';
+	aobject2.style.left = xy[1] + 'px';
+	
+	 var xy = getRandomPosition(aobject3);
+	aobject3.style.top = xy[0] + 'px';
+	aobject3.style.left = xy[1] + 'px';
+	
+	var xy = getRandomPosition(aobject4);
+	aobject4.style.top = xy[0] + 'px';
+	aobject4.style.left = xy[1] + 'px';
+	
+	var xy = getRandomPosition(aobject5);
+	aobject5.style.top = xy[0] + 'px';
+	aobject5.style.left = xy[1] + 'px';
+	
+	
+// 	Kim
 	
 var xy = getRandomPosition(kim1);
 	kim1.style.top = xy[0] + 'px';
