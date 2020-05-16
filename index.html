@@ -66,10 +66,18 @@
 <!-- Rocio -->	
 
     <div id="rocio1">
-     <img src="rocioimage.mp4"></img>
+     <img src="Glove1.mp4"></img>
     </div>
 	 <div id="rocio2">
-     <img src="Glove1.mp4"></img>
+     <img src="rociofinal2.mp4"></img>
+    </div>
+
+         <div id="rocio3">
+     <img src="rociofinal3.mp4"></img>
+    </div>
+  
+         <div id="rocio4">
+     <img src="rociofinal4.mp4"></img>
     </div>
 
 <!-- Rocio objects -->
@@ -143,6 +151,8 @@ var connie1 = document.getElementById("connie1");
 	
 var rocio1 = document.getElementById("rocio1");
 	var rocio2 = document.getElementById("rocio2");
+	var rocio3 = document.getElementById("rocio3");
+	var rocio4 = document.getElementById("rocio4");
 	
 // 	Rocio objects	
 	var robject1 = document.getElementById("robject1");
@@ -178,6 +188,8 @@ connie1.addEventListener("mousedown", initialClick, false);
 // 	Rocio 
 rocio1.addEventListener("mousedown", initialClick, false);
 	rocio2.addEventListener("mousedown", initialClick, false);
+	rocio3.addEventListener("mousedown", initialClick, false);
+	rocio4.addEventListener("mousedown", initialClick, false);
 	
 // 	Rocio objects
 	robject1.addEventListener("mousedown", initialClick, false);
@@ -305,6 +317,15 @@ var xy = getRandomPosition(kim1);
 	 var xy = getRandomPosition(rocio2);
 	rocio2.style.top = xy[0] + 'px';
 	rocio2.style.left = xy[1] + 'px';
+	
+	var xy = getRandomPosition(rocio3);
+	rocio3.style.top = xy[0] + 'px';
+	rocio3.style.left = xy[1] + 'px';
+	
+	var xy = getRandomPosition(rocio4);
+	rocio4.style.top = xy[0] + 'px';
+	rocio4.style.left = xy[1] + 'px';
+	
 	
 // 	Rocio objects
 	 var xy = getRandomPosition(robject1);
