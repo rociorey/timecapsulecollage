@@ -61,12 +61,16 @@
       <div id="connie4">
      <img src="conniefinal3.jpg"></img>
     </div>
-	
+
+<!-- Connie objects -->
+	<div id="cobject1">
+      <img src="cobject.jpg"></img>
+     </div>
 	
 <!-- Rocio -->	
 
     <div id="rocio1">
-     <img src="Glove1.mp4"></img>
+     <img src="Glove1.mp4"onclick="https://rociorey.github.io/FirstGloveMemory/"></img>
     </div>
 	 <div id="rocio2">
      <img src="rociofinal2.mp4"></img>
@@ -146,6 +150,9 @@ var connie1 = document.getElementById("connie1");
 	var connie3 = document.getElementById("connie3");
 	var connie4 = document.getElementById("connie4");
 	
+//      Connie objects
+	var cobject1 = document.getElementById("cobject1");
+	
 	
 // 	Rocio 	
 	
@@ -182,8 +189,13 @@ var moving = false;
 	aobject4.addEventListener("mousedown", initialClick, false);
 	aobject5.addEventListener("mousedown", initialClick, false);
 
+//      Connie
 connie1.addEventListener("mousedown", initialClick, false);
 	connie2.addEventListener("mousedown", initialClick, false);
+	
+	//      Connie objects
+	cobject1.addEventListener("mousedown", initialClick, false);
+	
 	
 // 	Rocio 
 rocio1.addEventListener("mousedown", initialClick, false);
@@ -306,6 +318,11 @@ var xy = getRandomPosition(kim1);
 	 var xy = getRandomPosition(connie4);
 	connie4.style.top = xy[0] + 'px';
 	connie4.style.left = xy[1] + 'px';
+	
+// 	Connie objects
+	var xy = getRandomPosition(cobject1);
+	cobject1.style.top = xy[0] + 'px';
+	cobject1.style.left = xy[1] + 'px';
 	
 	
 // 	Rocio 
