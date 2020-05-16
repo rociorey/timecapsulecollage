@@ -23,7 +23,7 @@ max-height:400px;
    height:400px; 
 }
 
-#aobject1, #aobject2, #aobject3, #aobject4, #aobject5{
+#amina1, #aobject1, #aobject2, #aobject3, #aobject4, #aobject5{
   width: 20px;
   height: 20px;
   position: absolute;
@@ -37,7 +37,7 @@ max-height:400px;
   
 }
 
-#rocio1, #rocio2, #robject1, #robject2, #robject3{
+#rocio1, #rocio2, #rocio3, #rocio4, #robject1, #robject2, #robject3{
   width: 20px;
   height: 20px;
   position: absolute;
