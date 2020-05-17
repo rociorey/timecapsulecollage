@@ -17,6 +17,11 @@ max-width:300px;
 max-height:400px;
 }
 
+.photos video{
+max-width:300px;
+max-height:400px;
+}
+
 #white{
    x:0;
    y:0;
